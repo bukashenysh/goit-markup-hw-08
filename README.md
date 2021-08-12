@@ -15,6 +15,6 @@
 9. Кнопкам задано свойство
 10.
 
-1.1. background colors: #FFFFFF #2F303A #F5F4FA #2196F3 1.2. font colors:
-#212121 #2196F3 #757575 #FFFFFF (внимание, есть две ссылки в RGBA) 1.3. ссылки
-на шрифты в двух форматах есть в шапке portfolio.html
+11. background colors: #FFFFFF #2F303A #F5F4FA #2196F3 
+12. font colors: #212121 #2196F3 #757575 #FFFFFF (внимание, есть две ссылки в RGBA) 
+13. ссылки на шрифты в двух форматах есть в шапке portfolio.html
