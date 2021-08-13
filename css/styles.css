@@ -1,0 +1,23 @@
+:root {
+  --white-color: #ffffff;
+  --main-title-color: #2f303a;
+  --secondary-title-color: #f5f4fa;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  background-color: var(--white-color);
+  /*надо размер шрифта добавить*/
+}
+.header-link {
+  color: var(--main-text-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
