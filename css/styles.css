@@ -6,7 +6,6 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -15,23 +14,19 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-body ul {
-  list-style-type: none;
-}
-body a {
-  text-decoration: none;
-}
-.header {
+
+.head {
   background-color: var(--white-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
-.header-link {
+.head-link {
   color: var(--main-text-color);
 }
-.header-link:hover,
-.header-link:focus {
+.head-link:hover,
+.head-link:focus {
   color: var(--accent-color);
 }
 .logo {
@@ -46,23 +41,23 @@ body a {
 .logo-design {
   color: var(--accent-color);
 }
-.header-contacts {
+.head-contacts {
   color: var(--secondary-text-color);
 }
-.header-contacts:hover,
-.header-contacts:focus {
+.head-contacts:hover,
+.head-contacts:focus {
   color: var(--accent-color);
 }
 .active {
   color: var(--accent-color);
 }
-.footeru {
+.footera {
   background-color: var(--main-title-color);
   font-style: normal;
   line-height: 1.71;
   color: var(--white-color);
 }
-.footeru-logo {
+.footera-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -70,16 +65,16 @@ body a {
   /* identical to box height */
   color: var(--white-color);
 }
-.footeru-address {
+.footera-address {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
-.footeru:hover,
-.footeru:focus {
+.footera:hover,
+.footera:focus {
   color: var(--accent-color);
 }
-.footeru-address:focus,
-.footeru-address:hover {
+.footera-address:focus,
+.footera-address:hover {
   color: var(--accent-color);
 }
 .hero {
@@ -156,7 +151,6 @@ body a {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
-  color: var(--main-text-color);
 }
 .team-undertext {
   font-size: 16px;
@@ -176,4 +170,18 @@ body a {
   line-height: 1.87;
   /* identical to box height, or 187% */
   color: var(--secondary-text-color);
+}
+/*убрать точки из списков*/
+.head-ul,
+.filter,
+.filter-items,
+.footera-ul,
+.hang-ul,
+.ourjob-ul,
+.team-ul {
+  list-style-type: none;
+}
+/*убрать стандартные подчеркивание ссылок*/
+.uderline-remover {
+  text-decoration: none;
 }

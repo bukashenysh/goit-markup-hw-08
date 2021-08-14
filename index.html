@@ -14,19 +14,19 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="head">
     <nav>
-    <a lang="en" href="./index.html" class="logo"><span class="logo-design">Web</span>Studio</a>
-    <ul>
-      <li><a href="index.html" class="header-link active">Студия</a></li>
-      <li><a href="./portfolio.html" class="header-link">Портфолио</a></li>
-      <li><a href="/contacts" class="header-link">Контакты</a></li>
+    <a lang="en" href="./index.html" class="logo uderline-remover"><span class="logo-design">Web</span>Studio</a>
+    <ul class="head-ul">
+      <li><a href="index.html" class="head-link active uderline-remover">Студия</a></li>
+      <li><a href="./portfolio.html" class="head-link uderline-remover">Портфолио</a></li>
+      <li><a href="/contacts" class="head-link uderline-remover">Контакты</a></li>
     </ul>
     </nav>
-    <ul>
-      <li><a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a>
+    <ul class="head-ul">
+      <li><a href="mailto:info@devstudio.com" class="head-contacts uderline-remover">info@devstudio.com</a>
       </li>
-      <li><a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a>
+      <li><a href="tel:+380961111111" class="head-contacts uderline-remover">+38 096 111 11 11</a>
       </li>
     </ul>
   </header>
@@ -37,7 +37,7 @@
   </section>
   <section class="hang">
     <h2 hidden>Особенности</h2>
-    <ul>
+    <ul class="hang-ul">
       <li>
         <h3 class="hang hang-title">Внимание к деталям</h3>
         <p class="hang hang-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -58,7 +58,7 @@
   </section>
   <section class="ourjob">
     <h2 class="ourjob-title">Чем мы занимаемся</h2>
-    <ul>
+    <ul class="ourjob-ul">
       <li>
         <a href="">
           <img src="./images/img-one.jpg" alt="написание кода" width="370" height="294" />
@@ -78,41 +78,47 @@
   </section>
   <section class="team">
     <h2 class="team-title">Наша команда</h2>
-    <!--ссылка будет вести на страницу-визитку данного сотрудника(фото и имя)-->
-    <!--параграфы в будущем можно убрать при оформлении, за ненадобностью-->
-    <ul>
+    <ul class="team-ul">
       <li>
-        <a href=""><img src="./images/img-igor.jpg" alt="ИгорьДемьяненко" width="270" height="260"></a>
-        <p><a href="" class="team-text">Игорь Демьяненко</a></p>
-        <p lang="en" class="team-undertext">Product Designer</p>
+        <div>
+          <img src="./images/img-igor.jpg" alt="ИгорьДемьяненко" width="270" height="260">
+          <h4 class="team-text">Игорь Демьяненко</h4>
+          <p lang="en" class="team-undertext">Product Designer</p>
+        </div>
       </li>
       <li>
-        <a href=""><img src="./images/img-olga.jpg" alt="ОльгаРепина" width="270" height="260"></a>
-        <p><a href="" class="team-text">Ольга Репина</a></p>
-        <p lang="en" class="team-undertext">Frontend Developer</p>
+        <div>
+          <img src="./images/img-olga.jpg" alt="ОльгаРепина" width="270" height="260">
+          <h4 class="team-text">Ольга Репина</h4>
+          <p lang="en" class="team-undertext">Frontend Developer</p>
+        </div>
       </li>
       <li>
-        <a href=""><img src="./images/img-nikolay.jpg" alt="НиколайТарасов" width="270" height="260"></a>
-        <p><a href="" class="team-text">Николай Тарасов</a></p>
-        <p lang="en" class="team-undertext">Marketing</p>
+        <div>
+          <img src="./images/img-nikolay.jpg" alt="НиколайТарасов" width="270" height="260">
+          <h4 class="team-text">Николай Тарасов</h4>
+          <p lang="en" class="team-undertext">Marketing</p>
+        </div>
       </li>
       <li>
-        <a href=""><img src="./images/img-mihail.jpg" alt="МихаилЕрмаков" width="270" height="260"></a>
-        <p><a href="" class="team-text">Михаил Ермаков</a></p>
-        <p lang="en" class="team-undertext">UI Designer</p>
+        <div>
+          <img src="./images/img-mihail.jpg" alt="МихаилЕрмаков" width="270" height="260">
+          <h4 class="team-text">Михаил Ермаков</h4>
+          <p lang="en" class="team-undertext">UI Designer</p>
+        </div>
       </li>
     </ul>
   </section>
 </main>
-<footer class="footeru">
-  <a lang="en" href="/" class="footeru-logo"><span class="logo-design">Web</span>Studio</a>
-  <address class="footeru">
-    <ul>
-      <li><a href="https://goo.gl/maps/7DvcRTHnyAGBfCf57" target="_blank" rel="noopener noreferrer" class="footeru">г. Киев, пр-т Леси Украинки, 26</a>
+<footer class="footera">
+  <a lang="en" href="/" class="footera-logo uderline-remover"><span class="logo-design ">Web</span>Studio</a>
+  <address class="footera">
+    <ul class="footera-ul">
+      <li><a href="https://goo.gl/maps/7DvcRTHnyAGBfCf57" target="_blank" rel="noopener noreferrer" class="footera uderline-remover">г. Киев, пр-т Леси Украинки, 26</a>
       </li>
-      <li><a href="mailto:info@devstudio.com" class="footeru-address">info@devstudio.com</a>
+      <li><a href="mailto:info@devstudio.com" class="footera-address uderline-remover">info@devstudio.com</a>
       </li>
-      <li><a href="tel:+380961111111" class="footeru-address">+38 096 111 11</a>
+      <li><a href="tel:+380961111111" class="footera-address uderline-remover">+38 096 111 11</a>
       </li>
     </ul>
   </address>
