@@ -6,7 +6,15 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -15,8 +23,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   width: 1170px;
-  padding-left: 15px;
   padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
 }
 
@@ -64,6 +72,7 @@ body {
   font-style: normal;
   line-height: 1.71;
   color: var(--white-color);
+  height: 252px;
 }
 .footera-logo {
   font-family: 'Raleway', sans-serif;
@@ -87,11 +96,14 @@ body {
 }
 .hero {
   background-color: var(--main-title-color);
+  text-align: center;
+}
+.hero-title{
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   /* or 136% */
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
@@ -106,6 +118,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 0.06em;
+  border: none;
+  padding: 10px 32px;
+  margin: 0;  
 }
 .button {
   color: var(--main-text-color);
@@ -144,9 +159,10 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
+  margin-bottom: 10px;
 }
 .hang-text {
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
@@ -155,6 +171,7 @@ body {
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 .team {
   background-color: var(--secondary-title-color);
@@ -164,16 +181,19 @@ body {
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 .team-text {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
+  margin: 30px auto 10px;
 }
 .team-undertext {
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-text-color);
+  margin: 0 auto 30px;
 }
 .filter-title {
   font-weight: 700;
@@ -182,12 +202,14 @@ body {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+  margin: 20px 24px 4px;
 }
 .filter-sign {
   font-size: 16px;
   line-height: 1.87;
   /* identical to box height, or 187% */
   color: var(--secondary-text-color);
+  margin: 0 24px 20px;
 }
 /*убрать точки из списков*/
 .head-ul,
@@ -234,7 +256,9 @@ body {
 }
 .filter-li:nth-child(3n) {
   margin-right: 0;
-  margin-bottom: 0;
+}
+.filter-li:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 .head-nav > a {
   margin-right: 93px;
@@ -256,4 +280,50 @@ body {
 .container{
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.footera-ul-li{
+  margin-bottom: 9px;
+}
+.footera-logo{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 145px;
+}
+.foot-main{
+  display: flex;
+  flex-direction: column;
+}
+.footera-ul-li:last-child{
+  margin-bottom: 0;
+}
+.hang-ul{
+  display: flex;
+}
+.hang-ul-li{
+  margin-right: 30px;
+}
+.hang-ul-li:last-child{
+  margin-right: 0;
+}
+.ourjob-ul{
+  display: flex;
+}
+.ourjob-ul-li{
+  margin-right: 30px;
+}
+.ourjob-ul-li:last-child{
+  margin-right: 0;
+}
+.team-ul{
+  display: flex;
+}
+.team-ul-li{
+  background-color: var(--white-color);
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.team-ul-li:last-child{
+  margin-right: 0;
 }
