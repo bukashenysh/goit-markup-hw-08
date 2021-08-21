@@ -6,6 +6,7 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -13,14 +14,21 @@ body {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .head {
+  display: block;
+  height: 80px;
   background-color: var(--white-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  border-bottom: 1px solid #ECECEC;
 }
 .head-link {
   color: var(--main-text-color);
@@ -109,6 +117,15 @@ body {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  border: none;
+  padding: 6px 22px;
+  margin: 0;
+}
+.filter-button-li {
+  margin-right: 8px;
+}
+.filter-button-li:last-child{
+  margin-right: 0;
 }
 .button:hover,
 .button:focus {
@@ -121,6 +138,7 @@ body {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .hang-title {
   font-weight: 700;
@@ -180,8 +198,62 @@ body {
 .ourjob-ul,
 .team-ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 /*убрать стандартные подчеркивание ссылок*/
 .uderline-remover {
   text-decoration: none;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-nav {
+  display: flex;
+  align-items: center;
+}
+.head-ul {
+  display: flex;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-li {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ECECEC
+}
+.filter-li:nth-child(3n) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.head-nav > a {
+  margin-right: 93px;
+}
+.head-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.head-ul-li {
+  margin-right: 50px;
+}
+.head-ul-li:last-child {
+  margin-right: 0;
+}
+.head-contacts{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.container{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
