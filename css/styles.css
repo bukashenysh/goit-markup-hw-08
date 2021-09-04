@@ -565,6 +565,7 @@ img {
 
 .card-thumb {
   position: relative;
+  overflow: hidden;
 }
 .filter-content-description {
   position: absolute;
