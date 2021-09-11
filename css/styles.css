@@ -222,8 +222,7 @@ img {
   height: 44px;
   padding: 12px;
   border-width: 0;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:last-child {
   margin-right: 0;
@@ -231,7 +230,6 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  fill: var(--white-color);
 }
 
 /* Секция Герой/Hero */
@@ -559,6 +557,7 @@ img {
   color: var(--secondary-text-color);
   margin-top: 4px;
 }
+/* for safari browser*/
 .neworlean {
   letter-spacing: 0.95px;
 }
@@ -590,7 +589,7 @@ img {
   transform: translateY(0%);
 }
 
-/*дз 5*/
+/* Backdrop/модалка */
 
 .backdrop {
   position: fixed;
