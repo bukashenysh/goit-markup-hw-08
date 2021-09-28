@@ -12,11 +12,11 @@
   border: hidden;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button:hover,
-.button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .button__hero {
@@ -30,13 +30,13 @@
   margin: 0;
 }
 
-.button__footer-icon {
+.button__footer--icon {
   fill: var(--white-color);
   margin-left: 10px;
   position: absolute;
 }
 
-.button__modal-send {
+.button__modal--send {
   display: block;
   margin: 0 auto;
   width: 200px;
@@ -44,7 +44,7 @@
   padding: 10px 32px;
 }
 
-.button__modal-close {
+.button__modal--close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -60,11 +60,11 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
-}
 
-.button__modal-close:hover,
-.button__modal-close:focus {
-  fill: var(--accent-color);
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
 
 .portfolio-filter__button {
@@ -83,12 +83,12 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-filter__button:hover,
-.portfolio-filter__button:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }

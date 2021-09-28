@@ -388,13 +388,13 @@ img {
   margin: 0;
 }
 
-.button__footer-icon {
+.button__footer--icon {
   fill: var(--white-color);
   margin-left: 10px;
   position: absolute;
 }
 
-.button__modal-send {
+.button__modal--send {
   display: block;
   margin: 0 auto;
   width: 200px;
@@ -402,7 +402,7 @@ img {
   padding: 10px 32px;
 }
 
-.button__modal-close {
+.button__modal--close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -420,8 +420,8 @@ img {
   background-color: var(--white-color);
 }
 
-.button__modal-close:hover,
-.button__modal-close:focus {
+.button__modal--close:hover,
+.button__modal--close:focus {
   fill: var(--accent-color);
 }
 
@@ -662,11 +662,11 @@ img {
   margin-bottom: 50px;
 }
 
-.portfolio-filter__button-position {
+.portfolio-filter__button--position {
   margin-right: 8px;
 }
 
-.portfolio-filter__button-position:last-child {
+.portfolio-filter__button--position:last-child {
   margin-right: 0;
 }
 
