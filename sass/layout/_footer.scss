@@ -1,0 +1,136 @@
+.page-footer {
+  background-color: var(--main-title-color);
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo__alternative {
+  display: inline-block;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.page-footer__address {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-footer__address:focus,
+.page-footer__address:hover {
+  color: var(--accent-color);
+}
+
+.page-footer__list {
+  display: inline-block;
+}
+
+.page-footer__item {
+  margin-bottom: 9px;
+}
+
+.page-footer__firstsector {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer__item:last-child {
+  margin-bottom: 0px;
+}
+
+.page-footer__sectors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.page-footer__secondsector {
+  padding-top: 72px;
+  padding-bottom: 100px;
+  margin-left: 70px;
+}
+
+.page-footer__title {
+  font-weight: 700;
+  letter-spacing: 1.14;
+  margin-bottom: 20px;
+}
+
+.white-adress:hover,
+.white-adress:focus {
+  color: var(--accent-color);
+}
+
+.page-footer__sociallink {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--white-color);
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-width: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-footer__sociallink:last-child {
+  margin-right: 0;
+}
+
+.page-footer__sociallink:hover,
+.page-footer__sociallink:focus {
+  background-color: var(--accent-color);
+}
+
+.page-footer__thirdsector {
+  padding-top: 72px;
+  padding-bottom: 100px;
+  margin-left: 93px;
+}
+
+.email-input {
+  background-color: transparent;
+  display: inline-block;
+  width: 356px;
+  height: 50px;
+  padding: 0 0 0 16px;
+  border-radius: 4px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--white-color);
+}
+
+.email-input::placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.email-input:focus {
+  color: var(--white-color);
+  padding-left: 16px;
+}
+
+.email-input:focus {
+  background-color: transparent;
+  display: inline-block;
+  width: 356px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 12px;
+  border: 1px solid var(--accent-color);
+}
+
+.email-input:focus-visible {
+  outline: none;
+}
