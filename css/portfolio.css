@@ -136,7 +136,13 @@ img {
 .button__footer {
   position: relative;
   padding: 10px 62px 10px 29px;
-  margin: 0;
+  margin: 20px auto 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .button__footer {
+    margin: 0;
+  }
 }
 
 .button__footer--icon {
@@ -413,6 +419,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo__alternative {
+    margin-bottom: 20px;
+  }
+}
+
 .page-footer__address {
   line-height: 1.71;
   color: var(--secondary-text-color);
@@ -424,39 +436,93 @@ img {
 }
 
 .page-footer__list {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__list {
+    display: inline-block;
+  }
 }
 
 .page-footer__item {
-  margin-bottom: 9px;
+  margin: 0 auto 8px;
 }
 
-.page-footer__item:last-child {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .page-footer__item {
+    margin-bottom: 9px;
+  }
+  .page-footer__item:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .page-footer__firstsector {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__firstsector {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .page-footer__sectors {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__sectors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__sectors {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 .page-footer__secondsector {
-  padding-top: 72px;
-  padding-bottom: 100px;
-  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__secondsector {
+    padding-top: 72px;
+    padding-bottom: 100px;
+    margin-left: 70px;
+  }
 }
 
 .page-footer__title {
   font-weight: 700;
   letter-spacing: 1.14;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__title {
+    margin-bottom: 20px;
+  }
 }
 
 .white-adress:hover,
@@ -486,19 +552,34 @@ img {
 }
 
 .page-footer__thirdsector {
-  padding-top: 72px;
-  padding-bottom: 100px;
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin: 60px auto 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__thirdsector {
+    padding-top: 72px;
+    padding-bottom: 100px;
+    margin-left: 93px;
+  }
+}
+
+.page-footer__block {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .email-input {
   background-color: transparent;
   display: inline-block;
-  width: 356px;
+  min-width: 290px;
   height: 50px;
-  padding: 0 0 0 16px;
+  padding-left: 16px;
   border-radius: 4px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -518,15 +599,43 @@ img {
   padding-left: 16px;
   background-color: transparent;
   display: inline-block;
-  width: 356px;
+  width: 100%;
   height: 50px;
   border-radius: 4px;
-  margin-right: 12px;
   border: 1px solid var(--accent-color);
 }
 
 .email-input:focus-visible {
   outline: none;
+}
+
+@media screen and (min-width: 480px) {
+  .email-input {
+    width: 450px;
+  }
+  .email-input:focus {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .email-input {
+    width: 450px;
+  }
+  .email-input:focus {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email-input {
+    margin-right: 12px;
+    width: 356px;
+  }
+  .email-input:focus {
+    width: 356px;
+    margin-right: 12px;
+  }
 }
 
 .backdrop {
