@@ -569,7 +569,7 @@ img {
 
 .team__item {
   background-color: var(--white-color);
-  margin-right: 0;
+  margin-right: -15px;
   margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -590,7 +590,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    flex-basis: calc((100% - 4 * 15px) / 2);
+    flex-basis: calc((100% - 2 * 15px) / 2);
     margin-bottom: 0;
   }
   .team__item:nth-child(2n + 1) {
@@ -606,7 +606,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team__item {
-    flex-basis: calc((100% - 8 * 15px) / 4);
+    flex-basis: calc((100% - 6 * 15px) / 4);
   }
   .team__item:not(:last-child) {
     margin-right: 30px;
@@ -646,31 +646,31 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  flex-basis: calc(100% / 2 - var(--card-set-gap));
-  margin-right: calc(-1 * var(--card-set-gap));
+  flex-basis: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 @media screen and (min-width: 480px) {
   .clients__list {
     justify-content: space-evenly;
-    flex-basis: calc(100% / 2 - var(--card-set-gap));
-    margin-right: calc(-1 * var(--card-set-gap));
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .clients__list {
     justify-content: space-evenly;
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-right: calc(-1 * var(--card-set-gap));
+    flex-basis: calc((100% - 6 * 15px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__list {
     justify-content: space-between;
-    flex-basis: calc(100% / 6 - var(--card-set-gap));
-    margin-right: calc(-1 * var(--card-set-gap));
+    flex-basis: calc((100% - 12 * 15px) / 2);
+    margin: 15px;
   }
 }
 
