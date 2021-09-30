@@ -2,23 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  flex-basis: calc(100% / 2 - var(--card-set-gap));
-  margin-right: calc(-1 * var(--card-set-gap));
+    flex-basis: calc(100% - 4 * 15px) / 2 );
+    margin: 15px;
 
   @media screen and (min-width: 480px) {
     justify-content: space-evenly;
-    flex-basis: calc(100% / 2 - var(--card-set-gap));
-    margin-right: calc(-1 * var(--card-set-gap));
+    flex-basis: calc(100% - 4 * 15px) / 2 );
+    margin: 15px;
   }
   @media screen and (min-width: 768px) {
     justify-content: space-evenly;
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-right: calc(-1 * var(--card-set-gap));
+    flex-basis: calc(100% - 6 * 15px) / 2 );
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
-    flex-basis: calc(100% / 6 - var(--card-set-gap));
-    margin-right: calc(-1 * var(--card-set-gap));
+    flex-basis: calc(100% - 12 * 15px) / 2 );
+    margin: 15px;
   }
 }
 
@@ -26,8 +26,7 @@
   border: 1px solid var(--svg-main-color);
   border-radius: 4px;
   margin-right: var(--card-set-gap);
-  width: 100%;
-  min-width: 210px;
+  width: 130px;
   height: 92px;
   display: flex;
   fill: var(--svg-main-color);
@@ -38,6 +37,16 @@
   &:hover {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
