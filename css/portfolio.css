@@ -6,8 +6,26 @@
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --card-set-gap: 30px;
   --svg-main-color: #afb1b8;
+  --card-set-gap: 0;
+}
+
+@media screen and (min-width: 480px) {
+  :root {
+    --card-set-gap: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --card-set-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --card-set-gap: 30px;
+  }
 }
 
 h1,
@@ -59,15 +77,54 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-  width: 1200px;
+  width: 100vw;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .button {
