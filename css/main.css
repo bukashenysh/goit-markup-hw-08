@@ -201,14 +201,43 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.button__menu--open {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 28px;
+  width: 40px;
+  border: none;
+  background-color: var(--white-color);
+}
+
+.button__menu--open:focus, .button__menu--open:hover {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button__menu--open {
+    display: none;
+  }
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: calc(28 / 24);
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
 .logo__design {
@@ -250,25 +279,52 @@ img {
 }
 
 .page-header__addition {
-  display: flex;
-  padding-top: 25px;
-  padding-bottom: 24px;
-  align-items: center;
-  justify-content: space-between;
+  padding: 16px 15px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__addition {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__addition {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .page-header__navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.page-header__navigation > a {
-  margin-right: 93px;
+.page-header__list--second {
+  display: none;
 }
 
-.page-header__list {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .page-header__list--second {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__list--second {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .page-header__item {
@@ -277,6 +333,19 @@ img {
 
 .page-header__item:last-child {
   margin-right: 0;
+}
+
+.page-header__item--alternative:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__item--alternative {
+    margin-right: 50px;
+  }
+  .page-header__item--alternative:last-child {
+    margin-right: 0;
+  }
 }
 
 .page-header__link {
@@ -293,10 +362,15 @@ img {
 
 .page-header__contacts {
   color: var(--secondary-text-color);
-  padding-top: 15px;
-  padding-bottom: 15px;
   fill: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__contacts {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .page-header__contacts:hover, .page-header__contacts:focus {
@@ -1029,12 +1103,26 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 95vw;
+  min-height: 80vh;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%) scale(1);
   background-color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1085,7 +1173,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input:focus {
+.modal__input:focus, .modal__input:hover {
   border-color: var(--accent-color);
 }
 
@@ -1124,7 +1212,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-comments:focus {
+.modal-comments:focus, .modal-comments:hover {
   border-color: var(--accent-color);
 }
 
@@ -1148,8 +1236,8 @@ img {
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
