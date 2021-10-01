@@ -410,6 +410,12 @@ img {
   position: absolute;
 }
 
+@media screen and (min-width: 1200px) {
+  .active::after {
+    bottom: -13px;
+  }
+}
+
 .page-header__icon--envelope {
   margin-right: 8px;
   width: 14px;
@@ -584,6 +590,8 @@ img {
   .page-footer__firstsector {
     padding-top: 60px;
     padding-bottom: 60px;
+    align-items: flex-start;
+    margin: 0;
   }
 }
 
@@ -604,9 +612,8 @@ img {
 @media screen and (min-width: 1200px) {
   .page-footer__sectors {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    align-items: baseline;
   }
 }
 
@@ -622,7 +629,8 @@ img {
   .page-footer__secondsector {
     padding-top: 72px;
     padding-bottom: 100px;
-    margin-left: 70px;
+    margin: 0 0 0 70px;
+    align-items: flex-start;
   }
 }
 
@@ -634,7 +642,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .page-footer__title {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
   }
 }
 
@@ -672,11 +680,17 @@ img {
   margin: 60px auto 60px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__thirdsector {
+    padding: 0 143px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .page-footer__thirdsector {
     padding-top: 72px;
     padding-bottom: 100px;
-    margin-left: 93px;
+    margin: 0 0 0 93px;
   }
 }
 
@@ -686,10 +700,17 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .page-footer__block {
+    flex-direction: row;
+  }
+}
+
 .email-input {
   background-color: transparent;
   display: inline-block;
   min-width: 290px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   border-radius: 4px;
@@ -724,10 +745,10 @@ img {
 
 @media screen and (min-width: 480px) {
   .email-input {
-    width: 450px;
+    min-width: 450px;
   }
   .email-input:focus {
-    width: 450px;
+    min-width: 450px;
   }
 }
 
@@ -742,12 +763,14 @@ img {
 
 @media screen and (min-width: 1200px) {
   .email-input {
-    margin-right: 12px;
-    width: 356px;
+    width: 358px;
+    min-width: 358px;
+    margin-right: 11px;
   }
   .email-input:focus {
-    width: 356px;
-    margin-right: 12px;
+    width: 358px;
+    min-width: 358px;
+    margin-right: 11px;
   }
 }
 
@@ -774,8 +797,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  min-width: 95vw;
-  min-height: 80vh;
+  width: 95vw;
+  height: 90vh;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%) scale(1);
   background-color: var(--white-color);
@@ -784,8 +807,8 @@ img {
 
 @media screen and (min-width: 480px) {
   .modal {
-    min-width: 450px;
-    min-height: 609px;
+    width: 450px;
+    height: 609px;
   }
 }
 
@@ -804,14 +827,23 @@ img {
 /**/
 .modal__heading {
   display: block;
+  max-width: 370px;
   margin-bottom: 12px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__heading {
+    font-size: 20px;
+    line-height: calc 1.15;
+    max-width: none;
+  }
 }
 
 .modal__field {

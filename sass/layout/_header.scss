@@ -12,8 +12,6 @@
   padding: 16px 15px 16px;
 
   display: flex;
-  // padding-top: 25px;
-  // padding-bottom: 24px;
   align-items: center;
   justify-content: space-between;
 
@@ -21,8 +19,6 @@
     padding: 18px 15px 18px;
 
     display: flex;
-    // padding-top: 25px;
-    // padding-bottom: 24px;
     align-items: center;
     justify-content: space-between;
   }
@@ -135,6 +131,10 @@
     bottom: -16px;
     width: 100%;
     position: absolute;
+
+    @media screen and (min-width: 1200px) {
+      bottom: -13px;
+    }
   }
 }
 
