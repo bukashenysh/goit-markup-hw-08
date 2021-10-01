@@ -280,13 +280,15 @@ img {
 
 .page-header__addition {
   padding: 16px 15px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
   .page-header__addition {
+    padding: 18px 15px 18px;
     display: flex;
-    padding-top: 25px;
-    padding-bottom: 24px;
     align-items: center;
     justify-content: space-between;
   }
@@ -297,25 +299,38 @@ img {
     display: flex;
     padding-top: 25px;
     padding-bottom: 24px;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
   }
 }
 
-.page-header__navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .page-header__navigation {
+    margin-left: -200px;
+  }
+}
+
+.page-header__list--first {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__list--first {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .page-header__list--second {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header__list--second {
     display: flex;
     flex-direction: column;
+    font-size: 12px;
+    line-height: calc(14 / 12);
   }
 }
 
@@ -335,16 +350,18 @@ img {
   margin-right: 0;
 }
 
-.page-header__item--alternative:not(:last-child) {
-  margin-bottom: 10px;
+.page-header__item--alternative:last-child {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1200px) {
   .page-header__item--alternative {
     margin-right: 50px;
+    margin-bottom: 0;
   }
   .page-header__item--alternative:last-child {
     margin-right: 0;
+    margin-top: 0;
   }
 }
 
@@ -393,8 +410,30 @@ img {
   position: absolute;
 }
 
-.page-header__icon {
-  margin-right: 10px;
+.page-header__icon--envelope {
+  margin-right: 8px;
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__icon--envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.page-header__icon--smartphone {
+  margin-right: 8px;
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__icon--smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .hero {
