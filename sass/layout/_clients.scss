@@ -1,7 +1,7 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-basis: calc((100% - 4 * 15px) / 2);
   margin: -15px;
 
