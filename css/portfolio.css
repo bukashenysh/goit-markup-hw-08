@@ -1019,4 +1019,122 @@ img {
 .modal-check-icon {
   fill: var(--white-color);
 }
+
+.menu-open {
+  justify-content: space-between;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  color: var(--primary-text-color);
+}
+
+.header-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding: 48px 40px;
+  background-color: var(--white-color);
+}
+
+.header-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header-menu__nav {
+  flex-grow: 1;
+}
+
+.header-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.header-menu__link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.header-menu__telephone {
+  display: block;
+  margin-bottom: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.header-menu__email {
+  display: block;
+  margin-bottom: 64px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header-menu__social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-menu__social-link {
+  display: block;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.header-menu__social-item:not(:last-child) {
+  padding-right: 4px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.header-menu__social-item:not(:first-child) {
+  padding-left: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .header-menu__social-item:not(:last-child) {
+    padding-right: 10px;
+  }
+  .header-menu__social-item:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+
+.current {
+  color: var(--accent-color);
+}
 /*# sourceMappingURL=portfolio.css.map */
