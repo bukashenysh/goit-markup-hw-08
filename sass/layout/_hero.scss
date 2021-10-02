@@ -54,12 +54,12 @@
     max-width: 1600px;
     height: 600px;
 
-    background-image: url(../images/img-desctop/1x/img-hero-d1x.jpg);
+    background-image: url(../images/img-desktop/1x/img-hero-d1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/img-desctop/2x/img-hero-d2x.jpg);
+      background-image: url(../images/img-desktop/2x/img-hero-d2x.jpg);
     }
   }
 }

@@ -178,7 +178,8 @@
           <li class="ourjob__item">
             <div class="thumb">
               <a href="">
-                <img src="./images/img-desctop/1x/img-one-d1x.jpg" alt="написание кода">
+                <img srcset="./images/img-desktop/1x/img-one-d1x.jpg 1x, ./images/img-desktop/2x/img-one-d2x.jpg 2x"
+                src="./images/img-desktop/1x/img-one-d1x.jpg" alt="написание кода" width="370" height="294">
               </a>
               <p class="label">Десктопные приложения</p>
             </div>
@@ -186,7 +187,8 @@
           <li class="ourjob__item">
             <div class="thumb">
               <a href="">
-                <img src="./images/img-desctop/1x/img-two-d1x.jpg" alt="оптимизация проекта">
+                <img srcset="./images/img-desktop/1x/img-two-d1x.jpg 1x, ./images/img-desktop/2x/img-two-d2x.jpg 2x"
+                src="./images/img-desktop/1x/img-two-d1x.jpg" alt="оптимизация проекта" width="370" height="294">
               </a>
               <p class="label">Мобильные приложения</p>
             </div>
@@ -194,7 +196,8 @@
           <li class="ourjob__item">
             <div class="thumb">
               <a href="">
-                <img src="./images/img-desctop/1x/img-three-d1x.jpg" alt="дизайн проекта">
+                <img srcset="./images/img-desktop/1x/img-three-d1x.jpg 1x, ./images/img-desktop/2x/img-three-d2x.jpg 2x"
+                src="./images/img-desktop/1x/img-three-d1x.jpg" alt="дизайн проекта" width="370" height="294">
               </a>
               <p class="label">Дизайнерские решения</p>
             </div>
@@ -209,7 +212,22 @@
         <ul class="team__list">
           <li class="team__item">
             <div>
-              <img src="./images/img-desctop/1x/img-igor-d1x.jpg" alt="ИгорьДемьяненко">
+              <picture>
+              <source srcset="
+              ./images/img-desktop/1x/img-igor-d1x.jpg 1x,
+              ./images/img-desktop/2x/img-igor-d2x.jpg 2x
+              " media="(min-width:1200px)" type="image/jpeg" />
+              <source srcset="
+              ./images/img-tablet/1x/img-igor-t1x.jpg 1x,
+              ./images/img-tablet/2x/img-igor-t2x.jpg 2x
+              " media="(min-width:768px)" type="image/jpeg" />
+              <img srcset="
+              ./images/img-mobile/1x/img-igor-m1x.jpg 1x,
+              ./images/img-mobile/2x/img-igor-m2x.jpg 2x
+              " src="./images/img-mobile/1x/img-igor-m1x.jpg"
+              alt="ИгорьДемьяненко" width="450" height="460" />
+              </picture>
+              <!-- <img src="./images/img-desktop/1x/img-igor-d1x.jpg" alt="ИгорьДемьяненко"> -->
               <h3 class="team__text">Игорь Демьяненко</h3>
               <p lang="en" class="team__undertext">Product Designer</p>
               <div class="team__social">
@@ -230,7 +248,21 @@
           </li>
           <li class="team__item">
             <div>
-              <img src="./images/img-desctop/1x/img-olga-d1x.jpg" alt="ОльгаРепина">
+              <picture>
+                <source srcset="
+              ./images/img-desktop/1x/img-olga-d1x.jpg 1x,
+              ./images/img-desktop/2x/img-olga-d2x.jpg 2x
+              " media="(min-width:1200px)" type="image/jpeg" />
+                <source srcset="
+              ./images/img-tablet/1x/img-olga-t1x.jpg 1x,
+              ./images/img-tablet/2x/img-olga-t2x.jpg 2x
+              " media="(min-width:768px)" type="image/jpeg" />
+                <img srcset="
+              ./images/img-mobile/1x/img-olga-m1x.jpg 1x,
+              ./images/img-mobile/2x/img-olga-m2x.jpg 2x
+              " src="./images/img-mobile/1x/img-olga-m1x.jpg" alt="ОльгаРепина" width="450" height="460" />
+              </picture>
+              <!-- <img src="./images/img-desktop/1x/img-olga-d1x.jpg" alt="ОльгаРепина"> -->
               <h3 class="team__text">Ольга Репина</h3>
               <p lang="en" class="team__undertext">Frontend Developer</p>
               <div class="team__social">
@@ -252,7 +284,21 @@
           </li>
           <li class="team__item">
             <div>
-              <img src="./images/img-desctop/1x/img-nikolai-d1x.jpg" alt="НиколайТарасов">
+              <picture>
+                <source srcset="
+              ./images/img-desktop/1x/img-nikolai-d1x.jpg 1x,
+              ./images/img-desktop/2x/img-nikolai-d2x.jpg 2x
+              " media="(min-width:1200px)" type="image/jpeg" />
+                <source srcset="
+              ./images/img-tablet/1x/img-nikolai-t1x.jpg 1x,
+              ./images/img-tablet/2x/img-nikolai-t2x.jpg 2x
+              " media="(min-width:768px)" type="image/jpeg" />
+                <img srcset="
+              ./images/img-mobile/1x/img-nikolai-m1x.jpg 1x,
+              ./images/img-mobile/2x/img-nikolai-m2x.jpg 2x
+              " src="./images/img-mobile/1x/img-nikolai-m1x.jpg" alt="НиколайТарасов" width="450" height="460" />
+              </picture>
+              <!-- <img src="./images/img-desktop/1x/img-nikolai-d1x.jpg" alt="НиколайТарасов"> -->
               <h3 class="team__text">Николай Тарасов</h3>
               <p lang="en" class="team__undertext">Marketing</p>
               <div class="team__social">
@@ -274,7 +320,21 @@
           </li>
           <li class="team__item">
             <div>
-              <img src="./images/img-desctop/1x/img-mihail-d1x.jpg" alt="МихаилЕрмаков">
+              <picture>
+                <source srcset="
+              ./images/img-desktop/1x/img-mihail-d1x.jpg 1x,
+              ./images/img-desktop/2x/img-mihail-d2x.jpg 2x
+              " media="(min-width:1200px)" type="image/jpeg" />
+                <source srcset="
+              ./images/img-tablet/1x/img-mihail-t1x.jpg 1x,
+              ./images/img-tablet/2x/img-mihail-t2x.jpg 2x
+              " media="(min-width:768px)" type="image/jpeg" />
+                <img srcset="
+              ./images/img-mobile/1x/img-mihail-m1x.jpg 1x,
+              ./images/img-mobile/2x/img-mihail-m2x.jpg 2x
+              " src="./images/img-mobile/1x/img-mihail-m1x.jpg" alt="МихаилЕрмаков" width="450" height="460" />
+              </picture>
+              <!-- <img src="./images/img-desktop/1x/img-mihail-d1x.jpg" alt="МихаилЕрмаков"> -->
               <h3 class="team__text">Михаил Ермаков</h3>
               <p lang="en" class="team__undertext">UI Designer</p>
               <div class="team__social">
