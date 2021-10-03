@@ -501,7 +501,7 @@ img {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__background {
-    background-image: url(../images/img-desktop/2x/img-hero-d2x.jpg);
+    background-image: url(../images/img-desktop/2x/hero-d2x.jpg);
   }
 }
 
